@@ -1,0 +1,192 @@
+/* Button Component CSS based on Tracxn Guidelines */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.txn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: background 0.12s ease, box-shadow 0.12s ease;
+}
+
+/* Base Sizing */
+.txn-btn--sm {
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 14px;
+  min-width: 70px;
+}
+.txn-btn--md {
+  height: 34px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 18px;
+  min-width: 70px;
+}
+.txn-btn--lg {
+  height: 44px;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 70px;
+}
+
+/* Icon Only Widths */
+.txn-btn--icon-only.txn-btn--sm { min-width: unset; width: 36px; padding: 0; }
+.txn-btn--icon-only.txn-btn--md { min-width: unset; width: 38px; padding: 0; }
+.txn-btn--icon-only.txn-btn--lg { min-width: unset; width: 48px; padding: 0; }
+
+/* ----------------- INTENT: BLUE ----------------- */
+.txn-btn--blue.txn-btn--primary {
+  background: #176fe4;
+  color: #ffffff;
+  box-shadow: 0 0 2px 1px rgba(18, 89, 182, 0.2);
+}
+.txn-btn--blue.txn-btn--primary:hover { background: #1259b6; }
+
+.txn-btn--blue.txn-btn--secondary {
+  background: #f7fafe;
+  color: #176fe4;
+  box-shadow: 0 0 2px 1px rgba(18, 89, 182, 0.12);
+}
+.txn-btn--blue.txn-btn--secondary:hover {
+  background: #e8f1fc;
+  color: #1259b6;
+}
+
+.txn-btn--blue.txn-btn--tertiary {
+  background: transparent;
+  color: #176fe4;
+  box-shadow: none;
+}
+.txn-btn--blue.txn-btn--tertiary:hover {
+  background: #e8f1fc;
+  color: #1259b6;
+}
+
+/* ----------------- INTENT: RED ----------------- */
+.txn-btn--red.txn-btn--primary {
+  background: #ba0021;
+  color: #ffffff;
+  box-shadow: 0 0 2px 1px rgba(167, 0, 30, 0.2);
+}
+.txn-btn--red.txn-btn--primary:hover { background: #a7001e; }
+
+.txn-btn--red.txn-btn--secondary {
+  background: #fcf2f4;
+  color: #ba0021;
+  box-shadow: 0 0 2px 1px rgba(167, 0, 30, 0.12);
+}
+.txn-btn--red.txn-btn--secondary:hover {
+  background: #f8e6e9;
+  color: #a7001e;
+}
+
+.txn-btn--red.txn-btn--tertiary {
+  background: transparent;
+  color: #ba0021;
+  box-shadow: none;
+}
+.txn-btn--red.txn-btn--tertiary:hover {
+  background: #f8e6e9;
+  color: #a7001e;
+}
+
+/* ----------------- INTENT: GREEN ----------------- */
+.txn-btn--green.txn-btn--primary {
+  background: #018749;
+  color: #ffffff;
+  box-shadow: 0 0 2px 1px rgba(1, 95, 51, 0.2);
+}
+.txn-btn--green.txn-btn--primary:hover { background: #015f33; }
+
+.txn-btn--green.txn-btn--secondary {
+  background: #f2f9f6;
+  color: #018749;
+  box-shadow: 0 0 2px 1px rgba(1, 95, 51, 0.12);
+}
+.txn-btn--green.txn-btn--secondary:hover {
+  background: #e6f3ed;
+  color: #015f33;
+}
+
+.txn-btn--green.txn-btn--tertiary {
+  background: transparent;
+  color: #018749;
+  box-shadow: none;
+}
+.txn-btn--green.txn-btn--tertiary:hover {
+  background: #e6f3ed;
+  color: #015f33;
+}
+
+/* ----------------- INTENT: ORANGE ----------------- */
+.txn-btn--orange.txn-btn--primary {
+  background: #ff7400;
+  color: #ffffff;
+  box-shadow: 0 0 2px 1px rgba(230, 104, 0, 0.2);
+}
+.txn-btn--orange.txn-btn--primary:hover { background: #e66800; }
+
+.txn-btn--orange.txn-btn--secondary {
+  background: #fff6ee;
+  color: #ff7400;
+  box-shadow: 0 0 2px 1px rgba(230, 104, 0, 0.12);
+}
+.txn-btn--orange.txn-btn--secondary:hover {
+  background: #fff3ea;
+  color: #e66800;
+}
+
+.txn-btn--orange.txn-btn--tertiary {
+  background: transparent;
+  color: #ff7400;
+  box-shadow: none;
+}
+.txn-btn--orange.txn-btn--tertiary:hover {
+  background: #fff3ea;
+  color: #e66800;
+}
+
+/* ----------------- INTENT: WHITE (Subtle) ----------------- */
+.txn-btn--white.txn-btn--primary {
+  background: #ffffff;
+  color: #333333;
+  box-shadow: 0 0 2px 1px rgba(51, 51, 51, 0.15);
+}
+.txn-btn--white.txn-btn--primary:hover {
+  /* background stays white, shadow lightens */
+  box-shadow: 0 0 2px 1px rgba(51, 51, 51, 0.10);
+}
+
+/* ----------------- INTENT: TRANSPARENT (Minimal) ----------------- */
+.txn-btn--transparent.txn-btn--primary {
+  background: transparent;
+  color: #333333;
+  box-shadow: none;
+}
+.txn-btn--transparent.txn-btn--primary:hover {
+  background: #eeeeee;
+}
+
+/* ----------------- DISABLED STATE (Universal) ----------------- */
+.txn-btn:disabled {
+  background: #eaebef !important;
+  color: #555555 !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+}
+
+/* Focus State (Accessibility) */
+.txn-btn:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
